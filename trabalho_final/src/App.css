@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 10;
   box-sizing: border-box;
 }
 
@@ -71,27 +71,20 @@ h2 {
 .container {
   height: 100px;
   width: 245px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: none;
 }
 
-.escolha {
-  width: 30%;
-  height: 140px;
-  display: inline-block;
+.escolha  {
+  width: 50%;
+  height: 150px;
   border-radius: 10px;
   background-color: #c7c713;
-  margin-right: 50px;
-  margin-inline-start: 100px;
-  
+  margin-right: -905px;
+  margin-top: 400px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 25px;
+  font: bold;  
 }
-.p {
-  text-align: right;
-}
-
 
 @keyframes App-logo-spin {
   from {
