@@ -14,7 +14,7 @@ function App() {
       <div class="escolha"> 
         <p>3. Criar uma página para controlar uma lista de compras. 
             Consiste em um campo para adicionar itens na lista.
-            com a possibilidade de editar, excluir 
+            com a possibilidade de editar, excluir e
             marcar que já pegou o item. </p>
       </div>
 

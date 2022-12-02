@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 
+
 function App() {
 
   const [codigo, setCodigo] = useState();
@@ -39,7 +40,7 @@ function App() {
   }
 
   function excluir(tarefa) {
-      axios.delete(`http://localhost:3100/tarefa/${tarefa.codigo}`).then((result) => {
+      axios.delete(`http://localhost:3100/tarefa/${tarefa.codigo}`).then(() => {
       buscar();
       })
 }
@@ -62,7 +63,7 @@ function App() {
             onChange={(event) => setDescricao(event.target.value)}></input>
         </div>
 
-        <button type="submit" className="btn btn-primary">Adicionar</button>
+        <button type="submit" className="btn btn-dark">Adicionar</button>
 
       </form>
 
@@ -72,7 +73,7 @@ function App() {
         <thead>
           <tr>
             <td>Itens Adicionados</td>
-            <td>...</td>
+            <td>Opções</td>
           </tr>
         </thead>
         <tbody>
@@ -81,9 +82,9 @@ function App() {
               <tr key={index}>
                 <td>{tarefa.descricao}</td>
                 <td>
-                <button type="submit" className="btn btn-primary" onClick={(event) => editar(tarefa)}>Editar</button>
-                <button type="submit" className="btn btn-primary" onClick={(event) => excluir(tarefa)}>Excluir</button>
-                <input type="checkbox" id="topping" name="topping" value="Paneer" /> Iten já coletado
+                <button type="submit" className="btn btn-dark" onClick={(event) => editar(tarefa)}>Editar</button>
+                <button type="submit" className="btn btn-dark" onClick={(event) => excluir(tarefa)}>Excluir</button><p></p>
+                <input type="checkbox" id="topping" name="topping" value="Paneer" /> Item já coletado
                 </td>
                 </tr>
             ))
